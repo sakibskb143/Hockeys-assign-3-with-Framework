@@ -8,31 +8,41 @@
     <!-- Tailwind and daisyui cmd link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.8.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- google font link -->
+    <!-- google manrope-font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- fontawesome link -->
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
     <!-- CSS style link -->
-     <style>
-        
-     </style>
+    <style>
+            .font-manrope{
+                font-family: "Manrope", sans-serif;
+            }
+    </style>
     <!-- costom CSS script link -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'com-text': '#13131899',
+                        'com-head': '#131318',
+                        'btn-bg': '#FF4240',
+                        'bdr-clr': '#0D0D1233',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
 
-<body>
-    <header>
+<body class="font-manrope">
+    <header class="container mx-auto">
 
     </header>
-    <main>
+    <main class="container mx-auto">
 
     </main>
     <footer>
