@@ -8,12 +8,13 @@
     <!-- Tailwind and daisyui cmd link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.8.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- google manrope-font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- fontawesome link -->
-    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- CSS style link -->
     <style>
             .font-manrope{
@@ -31,6 +32,7 @@
                         'com-head': '#131318',
                         'btn-bg': '#FF4240',
                         'bdr-clr': '#0D0D1233',
+                        'nav-clr': '#424247',
                     }
                 }
             }
@@ -39,10 +41,89 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto">
+    <header class="container  mx-auto lg:px-0 px-5">
+        <!-- bonus section nevbar -->
+        <section class="my-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a class="text-base font-normal text-center "><span class="text-btn-bg">Home</span></a></li>
+                      <li  class="text-base font-normal text-center text-nav-clr"><a>About</a></li>
+                      <li><a  class="text-base font-normal text-center text-nav-clr ">Pages</a></li>
+                      <li><a  class="text-base font-normal text-center text-nav-clr">Blog</a></li>
+                      <li><a  class="text-base font-normal text-center text-nav-clr">Contact</a></li>
+                  </div>
+                  <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold text-com-head">Hockey<span class="text-btn-bg">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden  lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-base font-normal text-center "><span class="text-btn-bg">Home</span></a></li>
+                    <li  class="text-base font-normal text-center text-nav-clr"><a>About</a></li>
+                    <li><a  class="text-base font-normal text-center text-nav-clr ">Pages</a></li>
+                    <li><a  class="text-base font-normal text-center text-nav-clr">Blog</a></li>
+                    <li><a  class="text-base font-normal text-center text-nav-clr">Contact</a></li>
+                  </ul>
+
+                </div>
+                
+                <div class="navbar-end ">
+                  <button class="btn btn-ghost btn-circle hidden lg:inline-block p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-center" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+                  <a class="btn text-[18px] lg:text-xl text-center text-white bg-btn-bg px-6 ">Get Ticket</a>
+                </div>
+              </div>
+
+        <!-- bonus section banner carousel -->      
+        </section>
+        
+        <section >
+
+        </section>
 
     </header>
-    <main class="container mx-auto">
+    <main class="container  mx-auto lg:px-0 px-5">
+
+      <!-- Professional hockey club section -->
+    <section class="my-24">
+      <div class="text-center  border-y border-dashed border-bdr-clr py-8">
+        <h1 class="text-[22px] lg:text-4xl font-extrabold text-head mb-6" >Professional Hockeys Club</h1>
+        <p class="text-base font-medium text-com-text w-[300px] lg:w-[607px] mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 gap-5 lg:gap-8">
+          <!-- progress radio 1 -->
+          <div class="text-center">
+            <div class="radial-progress   text-btn-bg " style="--value:87;" role="progressbar"><span class="text-com-head text-center font-extrabold">87%</span></div>
+            <h3 class="text-xl text-head font-semibold mt-6">Prayer Facility</h3>
+            <p class="text-base text-com-text font-normal mt-4">sacred space, solace, unity, spiritual connection, serene refuge.</p>
+          </div>
+        <!-- progress radio 2 -->
+        <div class="text-center">
+          <div class="radial-progress   text-[#49D293] " style="--value:95;" role="progressbar"><span class="text-com-head text-center font-extrabold">95%</span></div>
+          <h3 class="text-xl text-head font-semibold mt-6">Experienced Coach</h3>
+          <p class="text-base text-com-text font-normal mt-4">mentor, strategist, motivator, guiding players towards excellence and success.</p>
+        </div>
+      
+        <!-- progress radio 3 -->
+        <div class="text-center">
+          <div class="radial-progress   text-warning " style="--value:90;" role="progressbar"><span class="text-com-head text-center font-extrabold">90%</span></div>
+          <h3 class="text-xl text-head font-semibold mt-6">Senior Player</h3>
+          <p class="text-base text-com-text font-normal mt-4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <!-- progress radio 4 -->
+        <div class="text-center">
+          <div class="radial-progress   text-[#4C8DF1] " style="--value:90;" role="progressbar"><span class="text-com-head text-center font-extrabold">90%</span></div>
+          <h3 class="text-xl text-head font-semibold mt-6">Training Ground</h3>
+          <p class="text-base text-com-text font-normal mt-4">where skills are honed, teamwork forged, champions made.</p>
+        </div>
+
+      </div>
+
+    </section>
 
     </main>
     <footer>
